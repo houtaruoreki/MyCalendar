@@ -1,0 +1,13 @@
+<style>
+    body {
+        background: black;
+        color: white;
+    }
+</style>
+
+
+<h1>User Info</h1>
+{% for user in users %}
+    <h3>First name - {{ user.first_name }} | Last name - {{ user.last_name }} | Age - {{ user.age }}</h3>
+{% endfor %}
+
